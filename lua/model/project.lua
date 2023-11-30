@@ -30,7 +30,9 @@ function project:initialize()
 
 end
 
+---@param configTable table
 function project:new(configTable)
+    self = {}
 
     self.id = configTable.id
     self.name = configTable.name

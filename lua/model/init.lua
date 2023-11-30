@@ -1,4 +1,5 @@
 local config = require("config")
+local utils = require("utils")
 local project = require("model.project")
 
 --#region
@@ -9,7 +10,8 @@ local model = {
 
 
 function model:initialize()
-    local courseConfigTable = config.getConfigTable(config.path .. config.courses.O1.key)
+    local configFile = config.luapath .. config.courses.O1.key .. ".json"
+    local courseConfigTable = utils.jsonToTable(configFile)
     self.project = project.new(courseConfigTable)
 end
 
