@@ -12,7 +12,7 @@ function aplus.validate()
 end
 
 function aplus.should_skip()
-    log.debug("checking " .. currentPath .. " against " .. config.courses.O1.path, true)
+    log.debug("checking " .. currentPath .. " against " .. config.courses.O1.path, false)
     if currentPath:find(config.courses.O1.path) then
         return false
     end
@@ -28,9 +28,9 @@ function aplus.initialize()
 end
 
 function aplus.start()
-    if aplus.should_skip() then 
+    if aplus.should_skip() then
         log.debug("Conditions not met, aplus not loaded", true)
-        return 
+        return
     end
 
     aplus.validate()

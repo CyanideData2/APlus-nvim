@@ -34,3 +34,7 @@ leetcode:
     - [ ]  Expand feedbacl into a split
 - [ ] REPL configuration
 - [ ] Compile and run projects
+
+## Optimization
+– [ ] Json through saving a file
+– [ ] Look for module index through table inversion.

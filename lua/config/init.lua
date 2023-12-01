@@ -4,7 +4,7 @@ local config = {
     courses = {
         O1 = {
             key = "O1",
-            path = vim.env.HOME .. "/IdeaProjects/O1",
+            path = vim.env.HOME .. "/IdeaProjects/O1/",
         }
     },
     debug = true,
