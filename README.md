@@ -1,6 +1,11 @@
 # APlus-nvim
 Neovim integration for the A+ learning platform in Aalto Yliopisto
 
+## Dedign Principles
+1. Small and fast 
+2. Asynchronous in nature, there is no reason why the user can't edit code while the exercise is being sent
+3. Clean code for communicating in and out, performant code inside
+
 ## Requirements
 O1 folder called O1 and has the path '~/IdeaProjects/O1' for compatibilty with IntellijIdea
 
@@ -22,8 +27,8 @@ Greatly inspired by [scala plugin aalto](), however, implementing the unix philo
 
 ## Stolen things
 leetcode:
-    – main function 
-    – logger
+    - main function 
+    - logger
 
 ## Features to-do
 - [ ]  Create prohect structure and configuration
@@ -36,5 +41,5 @@ leetcode:
 - [ ] Compile and run projects
 
 ## Optimization
-– [ ] Json through saving a file
-– [ ] Look for module index through table inversion.
+- [ ] Json through saving a file
+- [ ] Look for module index through table inversion.
